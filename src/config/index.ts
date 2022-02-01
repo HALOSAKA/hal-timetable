@@ -33,24 +33,24 @@ export const periods: Period[] = [
 
 // MEMO: 授業名を設定する
 const lessonNames = {
-  SV42: "SV42",
-  GP41: "GP41",
-  BC41: "BC41",
-  FX41: "FX41",
-  WA43: "WA43",
-  MA42: "MA42",
+  XX01: "XX01",
+  XX02: "XX02",
+  XX03: "XX03",
+  XX04: "XX04",
+  XX05: "XX05",
+  XX06: "XX06",
   SELECT: "選択",
 } as const;
 
 // MEMO: 各授業名とそれに対応するZoomIDを設定する
 const zoomIds = {
-  [lessonNames.SV42]: "684-322-4894",
-  [lessonNames.GP41]: "707-958-9006",
-  [lessonNames.BC41]: "300-000-0000",
-  [lessonNames.FX41]: "707-958-9006",
-  [lessonNames.WA43]: "892-784-8092",
-  [lessonNames.MA42]: "892-784-8092",
-  [lessonNames.SELECT]: "658-074-6464",
+  [lessonNames.XX01]: "100-000-0000",
+  [lessonNames.XX02]: "200-000-0000",
+  [lessonNames.XX03]: "300-000-0000",
+  [lessonNames.XX04]: "400-000-0000",
+  [lessonNames.XX05]: "500-000-0000",
+  [lessonNames.XX06]: "600-000-0000",
+  [lessonNames.SELECT]: "700-000-0000",
 } as const;
 
 type LessonName = keyof typeof zoomIds;
@@ -65,45 +65,45 @@ type Timetable = Lesson[][];
 // MEMO: 時間割を設定する
 export const timetable: Timetable = [
   [
-    { name: "", id: "" },
-    { name: lessonNames.GP41, id: zoomIds[lessonNames.GP41] },
-    { name: "", id: "" },
+    { name: lessonNames.XX01, id: zoomIds[lessonNames.XX01] },
     { name: "", id: "" },
     { name: "", id: "" },
-  ],
-  [
-    { name: "", id: "" },
-    { name: lessonNames.GP41, id: zoomIds[lessonNames.GP41] },
-    { name: lessonNames.FX41, id: zoomIds[lessonNames.FX41] },
     { name: "", id: "" },
     { name: "", id: "" },
   ],
   [
     { name: "", id: "" },
-    { name: lessonNames.BC41, id: zoomIds[lessonNames.BC41] },
-    { name: lessonNames.WA43, id: zoomIds[lessonNames.WA43] },
+    { name: lessonNames.XX02, id: zoomIds[lessonNames.XX02] },
+    { name: lessonNames.XX02, id: zoomIds[lessonNames.XX02] },
+    { name: "", id: "" },
+    { name: "", id: "" },
+  ],
+  [
+    { name: "", id: "" },
+    { name: "", id: "" },
+    { name: "", id: "" },
     { name: "", id: "" },
     { name: lessonNames.SELECT, id: zoomIds[lessonNames.SELECT] },
   ],
   [
-    { name: lessonNames.SV42, id: zoomIds[lessonNames.SV42] },
     { name: "", id: "" },
     { name: "", id: "" },
-    { name: lessonNames.GP41, id: zoomIds[lessonNames.GP41] },
-    { name: lessonNames.MA42, id: zoomIds[lessonNames.MA42] },
-  ],
-  [
-    { name: lessonNames.SV42, id: zoomIds[lessonNames.SV42] },
     { name: "", id: "" },
     { name: "", id: "" },
-    { name: lessonNames.GP41, id: zoomIds[lessonNames.GP41] },
-    { name: lessonNames.MA42, id: zoomIds[lessonNames.MA42] },
+    { name: "", id: "" },
   ],
   [
     { name: "", id: "" },
     { name: "", id: "" },
     { name: "", id: "" },
-    { name: lessonNames.GP41, id: zoomIds[lessonNames.GP41] },
+    { name: "", id: "" },
+    { name: "", id: "" },
+  ],
+  [
+    { name: "", id: "" },
+    { name: "", id: "" },
+    { name: "", id: "" },
+    { name: "", id: "" },
     { name: "", id: "" },
   ],
 ];
