@@ -22,6 +22,9 @@ git clone git@github.com:HALOSAKA/hal-timetable.git
 
 # Originを変更
 git remote set-url origin 新しく作成したリポジトリのURL
+
+# 新しいリポジトリに内容をPush
+git push origin main
 ```
 
 これで自身のリポジトリで開発が可能となります。
