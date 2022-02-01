@@ -1,0 +1,51 @@
+.timetable {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+  border: 3px solid #000;
+  text-align: center;
+}
+
+.timetable th {
+  padding: 1rem;
+}
+
+.timetable td {
+  width: 120px;
+  height: 120px;
+  padding: 0;
+}
+
+.timetable .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+.timetable .week {
+  height: 60px;
+}
+
+.timetable .period {
+  padding: 1rem;
+}
+
+.timetable .active {
+  background-color: #e5e5e5;
+}
+
+@media screen and (max-width: 700px) {
+  .timetable .hide {
+    display: none;
+  }
+  .timetable .period {
+    width: auto;
+  }
+}
