@@ -1,6 +1,6 @@
 # HAL 時間割
 
-<img width="400" alt="スクリーンショット 2022-02-02 0 11 48" src="https://user-images.githubusercontent.com/50824354/151994993-25de7785-9037-454d-b93a-353c06560fdd.png">
+<img width="400" alt="スクリーンショット 2022-02-04 3 27 50" src="https://user-images.githubusercontent.com/50824354/152405807-20aae45e-cc7f-4f88-80af-b0f5cc072f8a.png">
 
 時間割を作成する為のテンプレートコードです。<br>
 ワンクリックで授業用の Zoom Meeting を起動することができます。
