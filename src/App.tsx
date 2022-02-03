@@ -1,5 +1,6 @@
 import { Time } from "./components/Time";
 import { Timetable } from "./components/Timetable";
+import { StudentNumber } from "./components/StudentNumber";
 import styles from "./App.module.css";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <Time />
       </header>
       <main className={styles.main}>
+        <StudentNumber />
         <Timetable />
       </main>
       <footer className={styles.footer}>
